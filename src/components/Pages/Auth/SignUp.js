@@ -6,6 +6,8 @@ import { useCreateUserWithEmailAndPassword, useSendPasswordResetEmail, useSignIn
 import auth from '../../../Firebase/firebase.init';
 import { BsEyeSlash } from "@react-icons/all-files/bs/BsEyeSlash";
 import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import useToken from '../../hooks/useToken';
 
 
 const SignUp = () => {
@@ -16,6 +18,8 @@ const SignUp = () => {
     const [updateProfile, updating, updatError] = useUpdateProfile(auth);
     const { register, formState: { errors }, handleSubmit } = useForm();
     const [showPass, setShowPass] = useState(false);
+    const [token] = useToken(user || googleUser);
+
 
     const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password);
@@ -27,10 +31,10 @@ const SignUp = () => {
     let from = location.state?.from?.pathname || "/";
 
     useEffect(() => {
-        if (user || googleUser) {
-            navigate(from, { replace: true });
+        if (token) {
+         navigate(from, { replace: true });
         }
-    }, [user, googleUser, from, navigate])
+    }, [token, from, navigate])
 
     const forgetPassword = async () => {
         if (user?.email) {

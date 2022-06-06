@@ -1,17 +1,54 @@
 import { format } from 'date-fns';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast, ToastContainer } from 'react-toastify';
+import auth from '../../../Firebase/firebase.init';
+import 'react-toastify/dist/ReactToastify.css';
 
-const BookingModal = ({ treatment, date, setTreatment }) => {
-    const { _id, name, slots } = treatment;
+const BookingModal = ({ treatment, date, setTreatment, refetch }) => {
+    const { _id, name, slots, price } = treatment;
+
+    const [user] = useAuthState(auth);
 
     const handleBooking = event => {
         event.preventDefault();
         const slot = event.target.slot.value;
-        console.log(_id, name, slot);
+        console.log(_id, name, slot, price);
 
+        const formattedDate = format(date, 'PPP');
+
+        const booking = {
+            treatmentId: _id,
+            treatmentName: name,
+            date: formattedDate,
+            slot,
+            price,
+            patientEmail: user.email,
+            patientName: event.target.name.value,
+            phone:event.target.phone.value
+        }
         // to close the modal
-        setTreatment(null);
+        fetch('http://localhost:5000/booking', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(booking)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if(data.success){
+                    alert(`Appointment is set, ${formattedDate} at ${slot}`)
+                }
+                else{
+                    alert(`Already have and appointment on ${data.booking?.date} at ${data.booking?.slot}`)
+                }
+                refetch()
+                setTreatment(null);
+                
+            });
     }
+
     return (
         <div>
             <input type="checkbox" id="booking-modal" className="modal-toggle" />
@@ -23,13 +60,15 @@ const BookingModal = ({ treatment, date, setTreatment }) => {
                         <input type="text" value={format(date, 'PPP')} disabled className="input input-bordered w-full mb-3" />
                         <select name="slot" className="select select-bordered w-full mb-3">
                             {
-                                slots.map((slot, index )=> <option key= {index} value={slot}>{slot}</option>)
+                                slots.map((slot, index) => <option key={index} value={slot}>{slot}</option>)
                             }
                         </select>
-                        <input type="text" placeholder="Type here" className="input input-bordered w-full mb-3" />
-                        <input type="text" placeholder="Type here" className="input input-bordered w-full mb-3" />
-                        <input type="text" placeholder="Type here" className="input input-bordered w-full mb-3" />
+                        <input type="number" name="price" disabled value={price} className="input input-bordered w-full mb-3" />
+                        <input type="text" name="name" placeholder="Name" className="input input-bordered w-full mb-3" />
+                        <input type="text" name="email" disabled value={user?.email || ''} className="input input-bordered w-full mb-3" />
+                        <input type="text"  name="phone" placeholder="Phone Number" className="input input-bordered w-full mb-3" />
                         <input type="submit" value="Submit" className="btn btn-secondary w-full bg-gradient-to-r from-secondary to-primary text-white" />
+                        <ToastContainer></ToastContainer>
                     </form>
                 </div>
             </div>

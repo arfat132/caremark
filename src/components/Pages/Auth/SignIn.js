@@ -5,12 +5,15 @@ import auth from '../../../Firebase/firebase.init';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import GoogleLogo from '../../Assests/icons/google.svg';
 import { BsEyeSlash } from "@react-icons/all-files/bs/BsEyeSlash";
+import 'react-toastify/dist/ReactToastify.css';
+import useToken from '../../hooks/useToken';
 
 const SignIn = () => {
     const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
     const [signInWithEmailAndPassword, user, loading, error,] = useSignInWithEmailAndPassword(auth);
     const { register, formState: { errors }, handleSubmit } = useForm();
     const [showPass, setShowPass] = useState(false);
+    const [token] = useToken(user || googleUser);
 
     const onSubmit = data => {
         signInWithEmailAndPassword(data.email, data.password);
@@ -21,10 +24,10 @@ const SignIn = () => {
     let from = location.state?.from?.pathname || "/";
 
     useEffect(() => {
-        if (user || googleUser) {
+        if (token) {
             navigate(from, { replace: true });
         }
-    }, [user, googleUser, from, navigate]);
+    }, [token, from, navigate]);
 
     return (
         <section className="py-20">
