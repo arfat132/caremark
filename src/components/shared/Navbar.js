@@ -22,6 +22,7 @@ const Navbar = () => {
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/appoinment'>Appoinment</Link></li>
                         <li><Link to='/about'>ABout</Link></li>
+                        <li><Link to=''>Doctors</Link></li>
                         <li><Link to=''>Blogs</Link></li>
                         <li><Link to=''>Contact</Link></li>
                     </ul>
@@ -37,6 +38,9 @@ const Navbar = () => {
                         isActive ? "text-white bg-secondary" : "bg-none text-black"
                     }>ABout</NavLink></li>
                     <li><NavLink to='/blogs' className={({ isActive }) =>
+                        isActive ? "text-white bg-secondary" : "bg-none text-black"
+                    }>Doctors</NavLink></li>
+                     <li><NavLink to='/blogs' className={({ isActive }) =>
                         isActive ? "text-white bg-secondary" : "bg-none text-black"
                     }>Blogs</NavLink></li>
                     <li><NavLink to='/contact' className={({ isActive }) =>

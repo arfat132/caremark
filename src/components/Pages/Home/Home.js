@@ -1,7 +1,6 @@
 import React from 'react';
 import AppoinmentSection from './AppoinmentSection';
 import Carousel from './Carousel';
-import ContactUs from './ContactUs';
 import DoctorTips from './DoctorTips';
 import ExceptionalSection from './ExceptionalSection';
 import Info from './Info';
@@ -19,7 +18,6 @@ const Home = () => {
             <ExceptionalSection></ExceptionalSection>
             <AppoinmentSection></AppoinmentSection>
             <Testimonials></Testimonials>
-            <ContactUs></ContactUs>
             <Footer></Footer>
         </div>
     );
