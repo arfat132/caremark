@@ -1,7 +1,7 @@
 import React from 'react';
 const ServiceSection = () => {
     return (
-        <section className="text-gray-600 body-font px-12">
+        <section className="text-gray-600 body-font px-12 bg-gray-100">
             <div className="container px-5 pb-24 mx-auto">
                 <div className="text-center mb-20">
                     <h3 className='text-secondary font-bold text-xl'>Our Services</h3>
@@ -9,7 +9,7 @@ const ServiceSection = () => {
                 </div>
                 <div className="flex flex-wrap -m-4 text-center">
                     <div className="p-4 md:w-1/3">
-                        <div className="h-full shadow-lg border-l-4 border-l-secondary rounded-none overflow-hidden">
+                        <div className="h-full bg-white shadow-lg border-l-4 border-l-secondary rounded-none overflow-hidden">
                             <img className='mx-auto w-40 pt-8' src="https://themetechmount.com/html/dezily/images/cardiology.svg" alt="" srcSet="" />
                             <div className="p-6">
                                 <h2 className="text-accent text-2xl title-font font-bold mb-3">Heart Screening Technologies</h2>
@@ -18,7 +18,7 @@ const ServiceSection = () => {
                         </div>
                     </div>
                     <div className="p-4 md:w-1/3">
-                        <div className="h-full shadow-lg border-l-4 border-l-secondary rounded-none overflow-hidden">
+                        <div className="h-full bg-white shadow-lg border-l-4 border-l-secondary rounded-none overflow-hidden">
                             <img className='mx-auto w-40 pt-8' src="https://themetechmount.com/html/dezily/images/healthcare.svg" alt="" srcSet="" />
                             <div className="p-6">
                                 <h2 className="text-gray-900 text-2xl title-font font-bold mb-3">Pacemaker Implant Techniquies</h2>
@@ -27,7 +27,7 @@ const ServiceSection = () => {
                         </div>
                     </div>
                     <div className="p-4 md:w-1/3">
-                        <div className="h-full shadow-lg border-l-4 border-l-secondary rounded-none overflow-hidden">
+                        <div className="h-full bg-white shadow-lg border-l-4 border-l-secondary rounded-none overflow-hidden">
                             <img className='mx-auto w-40 pt-8' src="https://themetechmount.com/html/dezily/images/heart.svg" alt="" srcSet="" />
                             <div className="p-6">
                                 <h2 className="text-gray-900 text-2xl title-font mb-3 font-bold">Cardiovascular Care Services</h2>

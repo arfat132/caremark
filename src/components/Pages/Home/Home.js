@@ -7,12 +7,14 @@ import Info from './Info';
 import ServiceSection from './ServiceSection';
 import Testimonials from './Testimonials';
 import Footer from '../../shared/Footer';
+import About from '../About';
 
 const Home = () => {
     return (
         <div>
             <Carousel></Carousel>
             <Info></Info>
+            <About></About>
             <DoctorTips></DoctorTips>
             <ServiceSection></ServiceSection>
             <ExceptionalSection></ExceptionalSection>
