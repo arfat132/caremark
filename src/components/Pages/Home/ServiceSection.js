@@ -2,7 +2,7 @@ import React from 'react';
 const ServiceSection = () => {
     return (
         <section className="text-gray-600 body-font px-12 bg-gray-100">
-            <div className="container px-5 pb-24 mx-auto">
+            <div className="container px-5 pb-48 mx-auto">
                 <div className="text-center mb-20">
                     <h3 className='text-secondary font-bold text-xl'>Our Services</h3>
                     <h1 className="sm:text-3xl text-2xl title-font text-accent mb-4 font-bold">Take The Road To A Healthy Heart Beat</h1>
