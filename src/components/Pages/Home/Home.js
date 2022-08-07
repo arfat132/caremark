@@ -6,6 +6,8 @@ import ServiceSection from './ServiceSection';
 import Testimonials from './Testimonials';
 import Footer from '../../shared/Footer';
 import WhyChooseUs from './WhyChooseUs';
+import Departments from './Departments';
+import Doctors from './Doctors';
 
 const Home = () => {
     return (
@@ -15,6 +17,8 @@ const Home = () => {
             <WhyChooseUs></WhyChooseUs>
             <ServiceSection></ServiceSection>
             <AppoinmentSection></AppoinmentSection>
+            <Departments></Departments>
+            <Doctors></Doctors>
             <Testimonials></Testimonials>
             <Footer></Footer>
         </div>

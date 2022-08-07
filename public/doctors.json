@@ -1,0 +1,123 @@
+[
+    {
+        "_id": 1,
+        "name": "Dr. Aikenhead",
+       "specialist": "Cardiologist",
+       "img": "https://i.ibb.co/JBZngq6/doctor1.png"
+      },
+      {
+        "_id": 2,
+        "name": " Dr. Borer",
+       "specialist": "Rheumatologist",
+       "img": "https://i.ibb.co/MPfjxpv/doctor2.png"
+      },
+      {
+        "_id": 3,
+        "name": "Dr. Cure",
+       "specialist": "Neurologist",
+       "img": "https://i.ibb.co/R0bFNQY/doctor3.png"
+      },
+      {
+        "_id": 4,
+        "name": "Dr. Gore",
+       "specialist": "Podiatrist",
+       "img": "https://i.ibb.co/8zrchzn/doctor4.png"
+      },
+      {
+        "_id": 5,
+        "name": "Dr. Trepman",
+       "specialist": "Radiationist",
+       "img": "https://i.ibb.co/nrVnMn7/doctor5.png"
+      },
+      {
+        "_id": 6,
+        "name": "Dr. Palmer",
+       "specialist": "Dermatologist",
+       "img": "https://i.ibb.co/S0m4dpp/doctor6.png"
+      },
+      {
+        "_id": 7,
+        "name": "Dr. Nalebuff",
+       "specialist": "Gastroenterologist",
+       "img": "https://i.ibb.co/pr3bGzq/doctor7.png"
+      },
+      {
+        "_id": 8,
+        "name": "Dr. Watchmaker",
+       "specialist": "Pediatriciant",
+       "img": "https://i.ibb.co/6YQynhn/doctor8.png"
+      },
+      {
+        "_id": 9,
+        "name": "Dr. Foley",
+       "specialist": "Otolaryngologist",
+       "img": "https://i.ibb.co/09PrFxV/doctor9.png"
+      },
+      {
+        "_id": 10,
+        "name": "Dr. Lukes",
+       "specialist": "Hematologist",
+       "img": "https://i.ibb.co/ZMLf5pG/doctor10.png"
+      },
+      {
+        "_id": 11,
+        "name": "Dr. Neupane",
+       "specialist": "Cardiologist",
+       "img": "https://i.ibb.co/dtHt9tQ/doctor11.png"
+      },
+      {
+        "_id": 12,
+        "name": "Dr. Blatter",
+       "specialist": "Rheumatologist",
+       "img": "https://i.ibb.co/k4P5Dzb/doctor12.png"
+      }, 
+      {
+        "_id": 13,
+        "name": "Dr. Shoemaker",
+       "specialist": "Neurologist",
+       "img": "https://i.ibb.co/J7bKYZy/doctor13.png"
+      },
+      {
+        "_id": 14,
+        "name": "Dr. Hopper",
+       "specialist": "Podiatrist",
+       "img": "https://i.ibb.co/ZczDLsH/doctor14.png"
+      },
+      {
+        "_id": 15,
+        "name": "Dr. Shouey",
+       "specialist": "Radiationist",
+       "img": "https://i.ibb.co/HgBGwF9/doctor15.png"
+      },
+      {
+        "_id": 16,
+        "name": "Dr. Toback",
+       "specialist": "Dermatologist",
+       "img": "https://i.ibb.co/60Gw2VN/doctor16.png"
+      },
+      {
+        "_id": 17,
+        "name": "Dr. Cornfield",
+       "specialist": "Gastroenterologist",
+       "img": "https://i.ibb.co/rtZt09v/doctor17.png"
+      },
+      {
+        "_id": 18,
+        "name": "Dr. Smellsey",
+       "specialist": "Pediatriciant",
+       "img": "https://i.ibb.co/7j7pgTL/doctor18.png"
+      },
+      {
+        "_id": 19,
+        "name": "Dr. Donald Duckles",
+       "specialist": "Otolaryngologist",
+       "img": "https://i.ibb.co/1qg3zqb/doctor19.png"
+      },
+      {
+        "_id": 20,
+        "name": "Dr. Splettstoesser",
+       "specialist": "Hematologist",
+       "img": "https://i.ibb.co/Hx4Hy8j/doctor20.png"
+      }
+
+]
