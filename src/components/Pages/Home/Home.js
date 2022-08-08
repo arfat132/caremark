@@ -8,6 +8,7 @@ import Footer from '../../shared/Footer';
 import WhyChooseUs from './WhyChooseUs';
 import Departments from './Departments';
 import Doctors from './Doctors';
+import Summary from './Summary';
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <AppoinmentSection></AppoinmentSection>
             <Departments></Departments>
             <Doctors></Doctors>
+            <Summary></Summary>
             <Testimonials></Testimonials>
             <Footer></Footer>
         </div>
