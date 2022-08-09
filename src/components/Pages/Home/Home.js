@@ -9,6 +9,7 @@ import WhyChooseUs from './WhyChooseUs';
 import Departments from './Departments';
 import Doctors from './Doctors';
 import Summary from './Summary';
+import PricingPlan from './PricingPlan';
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <Info></Info>
             <WhyChooseUs></WhyChooseUs>
             <ServiceSection></ServiceSection>
+            <PricingPlan></PricingPlan>
             <AppoinmentSection></AppoinmentSection>
             <Departments></Departments>
             <Doctors></Doctors>
