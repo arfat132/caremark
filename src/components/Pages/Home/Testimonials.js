@@ -38,14 +38,11 @@ const reviews = [
 const Testimonials = () => {
 
     return (
-        <section className="text-gray-600 body-font px-12 mb-40">
-            <div className="container px-5 py-24 mx-auto flex items-center md:flex-row flex-col">
-                <div className="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">
+        <section className="bg-gray-100 px-12 pb-24">
+            <div className="container px-5 pt-12 mx-auto">
+                <div className="text-center mb-20">
                     <h2 className="text-xl text-secondary tracking-widest font-bold title-font mb-1">Testimonials</h2>
                     <h1 className="md:text-3xl text-2xl font-medium title-font text-gray-900">What our Patiens Says</h1>
-                </div>
-                <div className="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
-                    <img className='w-24  lg:w-48' src={quote} alt="" srcSet="" />
                 </div>
             </div>
             <div className="flex flex-wrap text-center">

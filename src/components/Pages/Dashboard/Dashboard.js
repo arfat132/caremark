@@ -11,7 +11,6 @@ const Dashboard = () => {
         <div class="drawer drawer-mobile pt-16 z-0">
             <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
             <div class="drawer-content">
-                <h2 className='text-2xl font-bold text-secondary text-center py-5'>Welcome to your Dashboard</h2>
                 <Outlet></Outlet>
             </div>
             <div class="drawer-side">
@@ -21,7 +20,10 @@ const Dashboard = () => {
                     <li><Link to="/dashboard">My Appointments</Link></li>
                     <li><Link to="/dashboard/review">My Reviews</Link></li>
                     <li><Link to="/dashboard/history">My History</Link></li>
-                   {admin && <li><Link to="/dashboard/users">All users</Link></li>}
+                    {
+                        admin &&
+                        <li><Link to="/dashboard/users">All users</Link></li>
+                    }
                 </ul>
 
             </div>

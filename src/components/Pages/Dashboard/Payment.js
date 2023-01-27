@@ -23,7 +23,7 @@ const Payment = () => {
     if (error) return 'An error has occurred: ' + error.message
 
     return (
-        <div className='px-12 mx-auto'>
+        <div className='px-12 mx-auto pt-16'>
             <div className='grid grid-cols-2 gap-12'>
                 <div class="card w-50 h-40 bg-base-100 shadow-xl mb-5">
                     <div class="card-body">
