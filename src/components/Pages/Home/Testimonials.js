@@ -1,16 +1,9 @@
 import React from 'react';
-import quote from '../../Assests/icons/quote.svg';
 import people1 from '../../Assests/Banner/people1.png';
 import people2 from '../../Assests/Banner/people1.png';
 import people3 from '../../Assests/Banner/people1.png';
 import Review from './Review';
-import { EffectCoverflow, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from "swiper/react";
 import "../Home/style.css";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
 
 const reviews = [
     {
