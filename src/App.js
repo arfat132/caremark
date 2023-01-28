@@ -13,6 +13,7 @@ import MyAppoinment from './components/Pages/Dashboard/MyAppoinment';
 import AllUsers from './components/Pages/Dashboard/AllUsers';
 import RequiredAdmin from './components/Pages/Auth/RequiredAdmin';
 import Payment from './components/Pages/Dashboard/Payment';
+import Contact from './components/Pages/Contact/Contact';
 
 
 
@@ -31,6 +32,7 @@ function App() {
           <Appoinment />
         </RequiredAuth>
          } />
+        <Route path="/contact" element={<Contact />} />
          <Route path="/dashboard" element={
           <RequiredAuth>
           <Dashboard />
